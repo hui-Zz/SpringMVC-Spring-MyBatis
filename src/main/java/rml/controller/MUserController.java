@@ -3,9 +3,9 @@ package rml.controller;
 import java.util.List;
 import java.util.UUID;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -22,7 +22,7 @@ public class MUserController {
 		return muserService;
 	}
 
-	@Autowired
+	@Resource
 	public void setMuserService(MUserServiceI muserService) {
 		this.muserService = muserService;
 	}
